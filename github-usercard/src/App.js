@@ -32,7 +32,8 @@ class App extends Component {
 
     axios.get(`https://api.github.com/users/${this.state.fieldText}`)
       .then(response => this.setState({
-        userData: response.data
+        userData: response.data,
+        fieldText: ""
       }))
       .catch(error => console.log(error));
 
