@@ -23,15 +23,10 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-
-      <header className="App-header">
-        <h1>GitHub Data</h1>
-      </header>
-
       <div className = "main">
 
       <div className = "App-body">
-      <h2>Zahid Khawaja</h2>
+      <h1>Zahid Khawaja</h1>
       <div className = "user">
       <div className = "usercard">
         <img src = {this.state.userData.avatar_url}/>

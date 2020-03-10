@@ -3,17 +3,6 @@
   background-color: #f8f8ff;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 10vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
 .App-body {
   display: flex;
   flex-direction: column;
@@ -38,9 +27,17 @@ h1 {
   transition: 0.3s;
   padding: 15px;
   width: 350px;
-  margin: 15px;
   background-color: white;
   border-radius: 15px;
+}
+
+.usercard {
+  margin-bottom: 55px;
+  margin-top: 25px;
+}
+
+.followers {
+  margin: 30px;
 }
 
 img {
@@ -58,8 +55,21 @@ img {
   flex-wrap: wrap;
 }
 
+h1, h2 {
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(20px + 2vmin);
+  color: white;
+  margin-top: 0px;
+}
+
+h1 {
+  background-color: #20B2AA;
+}
+
 h2 {
-  font-size: 30px;
-  margin-top: 60px;
-  color: black;
+  background-color: #5F9EA0;
 }
