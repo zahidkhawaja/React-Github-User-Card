@@ -49,7 +49,7 @@ class App extends Component {
       <h1>{this.state.userData.name}</h1>
       <div className = "user">
       <div className = "usercard">
-        <img src = {this.state.userData.avatar_url}/>
+        <img src = {this.state.userData.avatar_url} alt = "avatar"/>
         <h3>{this.state.userData.name}</h3>
         <p>Username: {this.state.userData.login} </p>
         <p>Location: {this.state.userData.location}</p>
