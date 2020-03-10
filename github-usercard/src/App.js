@@ -50,7 +50,7 @@ class App extends Component {
       <div className = "user">
       <div className = "usercard">
         <img className = "avatar" src = {this.state.userData.avatar_url} alt = "avatar"/>
-        <h3>{this.state.userData.name}</h3>
+        <h3><a href = {`https://github.com/${this.state.userData.login}`}>{this.state.userData.name}</a></h3>
         <p>Username: {this.state.userData.login} </p>
         <p>Location: {this.state.userData.location}</p>
         <p>Followers: {this.state.userData.followers} </p>
