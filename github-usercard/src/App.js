@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import axios from "axios";
+import Followers from "./components/Followers";
 
 class App extends Component {
   constructor() {
@@ -32,6 +33,7 @@ class App extends Component {
       <div className = "App-body">
 
       <div className = "usercard">
+        <h2>User</h2>
         <p>Name: {this.state.userData.name}</p>
         <p>Username: {this.state.userData.login} </p>
         <p>Location: {this.state.userData.location}</p>
@@ -39,10 +41,7 @@ class App extends Component {
       </div>
 
       <div className = "followers">
-        <p>Follower 1 </p>
-        <p>Followers 2 </p>
-        <p>Followers 3</p>
-        <p>Followers 4</p>
+        <Followers />
       </div>
 
       </div>
