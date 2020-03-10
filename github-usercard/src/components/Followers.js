@@ -24,7 +24,7 @@ class Followers extends Component {
         {this.state.followerData.map(follower => (
             <div className = "followers"> 
             <img src = {follower.avatar_url}/>
-        <p>Username: {follower.login} </p>
+        <h3>{follower.login} </h3>
             </div>
         ))}
       </div>

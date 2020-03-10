@@ -35,7 +35,7 @@ class App extends Component {
       <div className = "user">
       <div className = "usercard">
         <img src = {this.state.userData.avatar_url}/>
-        <p>Name: {this.state.userData.name}</p>
+        <h3>{this.state.userData.name}</h3>
         <p>Username: {this.state.userData.login} </p>
         <p>Location: {this.state.userData.location}</p>
         <p>Followers: {this.state.userData.followers} </p>

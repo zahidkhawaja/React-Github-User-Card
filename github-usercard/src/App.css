@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color: #f8f8ff;
 }
 
 .App-header {
@@ -38,6 +39,8 @@ h1 {
   padding: 15px;
   width: 350px;
   margin: 15px;
+  background-color: white;
+  border-radius: 15px;
 }
 
 img {
@@ -58,4 +61,5 @@ img {
 h2 {
   font-size: 30px;
   margin-top: 60px;
+  color: black;
 }
