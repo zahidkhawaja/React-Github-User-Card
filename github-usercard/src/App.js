@@ -49,11 +49,12 @@ class App extends Component {
       <h1>{this.state.userData.name}</h1>
       <div className = "user">
       <div className = "usercard">
-        <img src = {this.state.userData.avatar_url} alt = "avatar"/>
+        <img className = "avatar" src = {this.state.userData.avatar_url} alt = "avatar"/>
         <h3>{this.state.userData.name}</h3>
         <p>Username: {this.state.userData.login} </p>
         <p>Location: {this.state.userData.location}</p>
         <p>Followers: {this.state.userData.followers} </p>
+        <img className = "graph" src = {`http://ghchart.rshah.org/${this.state.userData.login}`} alt = "chart"/>
       </div>
       </div>
       <h2>Followers</h2>

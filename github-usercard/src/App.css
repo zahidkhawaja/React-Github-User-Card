@@ -50,8 +50,13 @@ button {
   margin: 30px;
 }
 
-img {
+.avatar {
   width: 90%;
+}
+
+.graph {
+  width: 351px;
+  height: 52px;
 }
 
 .user {
