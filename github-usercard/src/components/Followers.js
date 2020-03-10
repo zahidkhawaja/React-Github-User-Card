@@ -9,8 +9,8 @@ class Followers extends Component {
     }
   }
 
-  componentDidMount() {
-    axios.get("https://api.github.com/users/zahidkhawaja/followers")
+  componentDidUpdate() {
+    axios.get(`https://api.github.com/users/${this.props.username}/followers`)
       .then(response => this.setState({
         followerData: response.data
       }))

@@ -14,6 +14,24 @@ class App extends Component {
   componentDidMount() {
     axios.get("https://api.github.com/users/zahidkhawaja")
       .then(response => this.setState({
+        userData: response.data,
+        fieldText: ""
+      }))
+      .catch(error => console.log(error));
+
+  }
+
+  handleChanges = e => {
+    this.setState({
+      fieldText: e.target.value
+    });
+  }
+
+  getUser = e => {
+    e.preventDefault();
+
+    axios.get(`https://api.github.com/users/${this.state.fieldText}`)
+      .then(response => this.setState({
         userData: response.data
       }))
       .catch(error => console.log(error));
@@ -23,10 +41,11 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <input type = "search" value = {this.state.fieldText} onChange = {this.handleChanges} placeholder = "Enter GitHub username" />
+      <button onClick = {this.getUser}> Search </button>
       <div className = "main">
-
       <div className = "App-body">
-      <h1>Zahid Khawaja</h1>
+      <h1>{this.state.userData.name}</h1>
       <div className = "user">
       <div className = "usercard">
         <img src = {this.state.userData.avatar_url}/>
@@ -37,7 +56,7 @@ class App extends Component {
       </div>
       </div>
       <h2>Followers</h2>
-        <Followers />
+        <Followers username = {this.state.userData.login} />
 
       </div>
       </div>
