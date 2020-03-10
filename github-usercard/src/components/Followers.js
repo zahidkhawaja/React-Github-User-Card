@@ -20,10 +20,12 @@ class Followers extends Component {
 
   render() {
     return (
-      <div>
-          <h2>Followers</h2>
+      <div className = "followercards">
         {this.state.followerData.map(follower => (
-            <p>{follower.login}</p>
+            <div className = "followers"> 
+            <img src = {follower.avatar_url}/>
+        <p>Username: {follower.login} </p>
+            </div>
         ))}
       </div>
     )

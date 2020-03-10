@@ -31,18 +31,18 @@ class App extends Component {
       <div className = "main">
 
       <div className = "App-body">
-
+      <h2>Zahid Khawaja</h2>
+      <div className = "user">
       <div className = "usercard">
-        <h2>User</h2>
+        <img src = {this.state.userData.avatar_url}/>
         <p>Name: {this.state.userData.name}</p>
         <p>Username: {this.state.userData.login} </p>
         <p>Location: {this.state.userData.location}</p>
         <p>Followers: {this.state.userData.followers} </p>
       </div>
-
-      <div className = "followers">
-        <Followers />
       </div>
+      <h2>Followers</h2>
+        <Followers />
 
       </div>
       </div>
