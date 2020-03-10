@@ -1,14 +1,20 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
+class App extends Component {
+  constructor() {
+    super();
+  }
+
+  render() {
+    return (
+      <div className="App">
       <header className="App-header">
-        <h1>GitHub</h1>
+        <h1>GitHub User Card</h1>
       </header>
     </div>
-  );
+    )
+  }
 }
 
 export default App;
