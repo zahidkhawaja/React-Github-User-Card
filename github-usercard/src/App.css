@@ -1,0 +1,86 @@
+.App {
+  text-align: center;
+  background-color: #f8f8ff;
+}
+
+.App-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 35px;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+input {
+  width: 180px;
+  font-size: 25px;
+  margin: 10px;
+}
+
+button {
+  font-size: 15px;
+}
+
+.usercard, .followers {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  padding: 15px;
+  width: 350px;
+  background-color: white;
+  border-radius: 15px;
+}
+
+.usercard {
+  margin-bottom: 55px;
+  margin-top: 25px;
+}
+
+.followers {
+  margin: 30px;
+}
+
+.avatar {
+  width: 90%;
+}
+
+.graph {
+  width: 351px;
+  height: 52px;
+}
+
+.user {
+  display: flex;
+  justify-content: center;
+}
+
+.followercards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+h1, h2 {
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(20px + 2vmin);
+  color: white;
+  margin-top: 0px;
+}
+
+h1, h2 {
+  background-color: #5F9EA0;
+}
